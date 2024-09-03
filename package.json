@@ -1,8 +1,12 @@
 {
-	"name": "Forest",
-	"version": "1.0.0",
-	"main": "index.js",
-	"scripts": {
-		"hello": "echo \"hello\" && exit 1"
-	},
+  "name": "forest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"hello\"",
+		"generate": "node src/generator.js"
+  },
+  "author": "",
+  "license": "ISC"
 }

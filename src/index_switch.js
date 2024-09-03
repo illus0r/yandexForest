@@ -1,10 +1,8 @@
 let iframes = []
-const delay = 10000
-let srcs = [
-  'programmer1/index.html',
-  'programmer2/index.html',
-  'programmer3/index.html',
-]
+const delay = 2000
+import {names} from './names.js'
+let srcs = names.map(name => `./${name}/index.html`)
+
 function createIframe(src) {
   var iframe = document.createElement('iframe')
   iframe.src = src

@@ -12,6 +12,9 @@ function setup() {
     color(255, 193, 7), // Amber
   ]
   background(random(startColors))
+  textSize(40)
+  textStyle(BOLD)
+  text('PLACEHOLDER', 20, 70)
 
   circles.push(new Circle(width / 2, height, 100, startColors[0]))
 }
