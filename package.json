@@ -1,0 +1,8 @@
+{
+	"name": "Forest",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"hello": "echo \"hello\" && exit 1"
+	},
+}

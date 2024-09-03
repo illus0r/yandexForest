@@ -1,4 +1,5 @@
 let iframes = []
+const delay = 10000
 let srcs = [
   'programmer1/index.html',
   'programmer2/index.html',
@@ -21,11 +22,10 @@ window.onload = function () {
 
 let current = 0
 function animate() {
-  //remove all iframes
   document.querySelectorAll('iframe').forEach(function (iframe) {
     iframe.parentNode.removeChild(iframe)
   })
   current = (current + 1) % iframes.length
   document.body.appendChild(iframes[current])
-  setTimeout(animate, 1000)
+  setTimeout(animate, delay)
 }
