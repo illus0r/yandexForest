@@ -1,3 +1,5 @@
+// старая версия скрипта, тут айфреймы переключаются один за одним
+
 let iframes = []
 const delay = 2000
 import {names} from './names.js'
