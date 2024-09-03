@@ -5,8 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"hello\"",
-		"generate": "node src/generator.js"
+		"generate": "node src/generator.js",
+		"start": "npm run generate && cd build && browser-sync start --server --watch --no-notify --no-ui"
   },
+	"devDependencies": {
+		"browser-sync": "^2.26.7"
+	},
   "author": "",
   "license": "ISC"
 }

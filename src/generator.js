@@ -2,7 +2,9 @@ const names = require('./names')
 const fs = require('fs')
 const path = require('path')
 
-fs.rmSync(path.join(__dirname, '..', 'build'), {recursive: true})
+if (fs.existsSync(path.join(__dirname, '..', 'build'))) {
+  fs.rmSync(path.join(__dirname, '..', 'build'), {recursive: true})
+}
 fs.mkdirSync(path.join(__dirname, '..', 'build'), {recursive: true})
 
 fs.copyFileSync(
